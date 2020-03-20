@@ -1,0 +1,161 @@
+
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+  font-size: 10px; /*Generalized font-size*/
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  line-height: 1.5; /*Suitable line-height*/
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+/*Making footer bold and text-aligned to right*/
+footer {
+  clear: both;
+  font-weight: bold;
+  text-align: right;
+}
+footer p {
+  font-size: 24px;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+  /*adding word & letter spacing for body text*/
+  word-spacing: .5px;
+  letter-spacing: .5px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+  border-color: #add8e6; /*Made colour behind all text a light blue*/
+  letter-spacing: 1.5px;
+}
+
+/*Changing background color to golden yellow to compliment the blue*/
+header, footer {
+  background-color: #ffbf00;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/*Fonts & Colours*/
+
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px; /*Adjusting header sizes*/
+  letter-spacing: 1.5px;
+  text-align: center;
+  background-color: #B8E2F2;
+}
+
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+}
+
+p,
+ul,
+li,
+ol {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+ul li ol {
+  font-size: 10px;
+}
+
+/*text-indentation for all headings for the section tags*/
+section > p:first-of-type {
+  text-indent: 20px;
+}
+/*My attempt of targeting the second one
+section > p:last-of-type {
+  text-indent: 20px;
+}*/
+
+/* -------- Links Styling---------*/
+a {
+  color:#000080;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*Creating Hover Effect for Links*/
+a:hover {
+  color: #add8e6;
+  text-decoration: none;
+  text-outline: none;
+}
+
+/*Making "visited" styles
+a:visited {
+  color: #ffbf00;
+}*/
+/*Resetting :visited when browser is refreshed*/
+
+
+/*Removing the default focus outline*/
+
+
+/*Adding image beside links
+img {
+  float: left;
+}
+
+.follow {
+  line-height: 19px;
+}*/
+
+/* -------- Navigation Menu Styling---------*/
+nav ul { /*only targeting the nav bar, not the program list*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+nav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the link colours when hovered over*/
+nav li a:hover {
+  background-color: #add8e6;
+  color: white;
+}
+
+/* --------Lists (not nav)---------*/
+aside ul li {
+  line-height: 3em;
+}
